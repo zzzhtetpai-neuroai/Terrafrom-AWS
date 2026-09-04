@@ -8,4 +8,3 @@ Centralized, secure remote state storage infrastructure for Terraform projects.
 * **Bucket Versioning:** Preserves state history and enables rollback recovery.
 * **Encryption:** Server-side encryption enabled using AWS KMS keys.
 
-## Usage
