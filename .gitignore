@@ -1,4 +1,15 @@
-.terraform/
+# Ignores .terraform folders anywhere in the project tree
+**/.terraform/
+
+# State files & backups
 *.tfstate
 *.tfstate.*
+*.tfstate.backup
+
+# Output logs
 nohup.out
+crash.log
+
+# Ignore variable files containing sensitive data
+*.tfvars
+*.tfvars.json

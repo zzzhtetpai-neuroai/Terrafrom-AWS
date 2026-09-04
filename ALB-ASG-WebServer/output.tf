@@ -1,4 +1,4 @@
-output "public_ip" {
-  value       = aws_instance.my_instance.public_ip
-  description = "The public IP address of the web server"
+output "alb_dns_name" {
+  value       = aws_lb.my_lb.dns_name
+  description = "The DNS name of the load balancer"
 }
