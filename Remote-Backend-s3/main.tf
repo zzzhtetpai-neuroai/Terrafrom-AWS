@@ -44,10 +44,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 terraform {
 backend "s3" {
-    bucket     = "htetpai-terraform-state-bucket"
     key         = "global/s3/terraform.tfstate"
-    region    = "us-west-2"
-    dynamodb_table = "htetpai-terraform-state-locks"
-    encrypt      = true
+   
   }
 }

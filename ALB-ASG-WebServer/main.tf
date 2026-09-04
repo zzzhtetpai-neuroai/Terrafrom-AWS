@@ -124,3 +124,8 @@ resource "aws_security_group" "instance" {
 }
 }
 
+terraform {
+  backend "s3" {
+    key = "alb-asg-webserver/terraform.tfstate"
+  }
+}
